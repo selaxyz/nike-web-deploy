@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
+    <title>Checkout</title>
+</head>
+
+<body class="w-full flex flex-col items-center">
+    <section class="flex justify-between items-center px-4 w-full">
+        <a href="../../index.html"> <img class="h-16 w-fit" src="../../src/images/swoosh-logo-black.jpeg"
+                alt="nike logo"></a>
+        <a href="../../pages/cart/cart.html"><img src="../../src/icon/bag.svg" alt="bag icon"></a>
+    </section>
+    <section class="hidden md:flex px-4 justify-end items-end gap-4 text-sm w-full">
+        <p>1-800-806-6453</p>
+        <div class="flex items-end gap-2">
+            <img src="../../src/icon/chat.svg" alt="chat icon">
+            <a href="#" class="underline underline-offset-4">Live Chat</a>
+        </div>
+    </section>
+    <div class="flex flex-col items-center py-6 w-full">
+        <h1 class="text-2xl">Checkout</h1>
+        <p class="block md:hidden text-gray-500">1 item $168.00</p>
+    </div>
+    <!-- DELIVERY OPTION AND IN YOUR BAG -->
+    <section class="grid grid-cols-10 max-w-screen-lg  md:gap-12 px-6 w-full">
+
+        <!-- IN YOR BAG MOBILE -->
+        <details class="md:hidden col-span-full md:col-span-3 border-y space-y-6 py-8">
+            <summary class="flex text-2xl justify-between items-center">
+                In Your Bag
+                <img src="../../src/icon/chevron-down.svg" alt="down icon">
+            </summary>
+            <p>Arrives by Tue, May 21</p>
+            <div class="flex gap-6 w-full">
+                <img class="w-16 h-16"
+                    src="https://static.nike.com/a/images/f_png,q_auto,w_80,h_80,c_pad,e_sharpen:100/6f48de60-d1eb-4282-b61a-53edd3ecaeeb/DV3337_006_BRAND_A"
+                    alt="shoes">
+                <div class="text-gray-600">
+                    <p class="text-black">Nike Air Max Dn Shoes</p>
+                    <p>Style #: DV3337-006</p>
+                    <p>Size: M 7 / W 8.5</p>
+                    <p>Color: Black/Black/Metallic Dark Grey/Black</p>
+                    <p>Qty: 1 @ $160.00</p>
+                    <p>$160.00</p>
+                </div>
+            </div>
+            <div class="w-full shrink-0">
+                <div class="flex justify-between w-full">
+                    <p class="flex gap-2">Subtotal <img src="../../src/icon/question-circle.svg" alt="more information">
+                    </p>
+                    <p>$160.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="flex gap-2">Estimated Shipping<img src="../../src/icon/question-circle.svg"
+                            alt="more information">
+                    </p>
+                    <p>$8.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="flex gap-2">Estimated Tax <img src="../../src/icon/question-circle.svg"
+                            alt="more information">
+                    </p>
+                    <p>$0.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Total</p>
+                    <p>$168.00</p>
+                </div>
+            </div>
+        </details>
+
+        <!-- DELIVERY OPTION -->
+        <div class="col-span-full md:col-span-7 space-y-4 py-6">
+            <h1 class="text-2xl">Delivery Options</h1>
+            <div class="flex gap-4">
+                <div class="border-2 border-black flex-1 flex items-center justify-center gap-4 py-4 rounded-md">
+                    <svg aria-hidden="true" class="css-19093ix" focusable="false" viewBox="0 0 24 24" role="img"
+                        width="24px" height="24px" fill="none" style="right: 0px;">
+                        <path stroke="currentColor" stroke-width="1.5"
+                            d="M15.75 16.565H8.5M.75 11.5V14A2.25 2.25 0 003 16.25h.25m16.25-6.5H3A2.25 2.25 0 01.75 7.5V5.25h17.189c.2 0 .39.079.531.22l4.56 4.56a.75.75 0 01.22.531v3.689A2.25 2.25 0 0121 16.5h-.75m-12 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm12 .033a2.25 2.25 0 11-4.502-.001 2.25 2.25 0 014.502.001z">
+                        </path>
+                    </svg>
+                    <p>Ship</p>
+                </div>
+                <div class="border-2 border-gray-300 flex-1 flex items-center justify-center gap-4 py-4 rounded-md">
+                    <svg aria-hidden="true" class="css-19093ix" focusable="false" viewBox="0 0 24 24" role="img"
+                        width="24px" height="24px" fill="none" style="right: -6px;">
+                        <path fill="currentColor"
+                            d="M12 21.747l-.468.586a.75.75 0 00.936 0L12 21.747zM18 9c0 .92-.303 2.081-.824 3.362-.515 1.269-1.222 2.6-1.974 3.843a38.411 38.411 0 01-2.217 3.274c-.695.914-1.223 1.498-1.453 1.682l.936 1.172c.395-.314 1.023-1.042 1.711-1.947a39.904 39.904 0 002.306-3.404c.78-1.288 1.526-2.691 2.08-4.055.55-1.352.935-2.723.935-3.927H18zm-5.532 12.16c-.23-.183-.758-.767-1.453-1.681a38.41 38.41 0 01-2.217-3.274c-.752-1.243-1.458-2.574-1.974-3.843C6.303 11.081 6 9.921 6 9H4.5c0 1.204.385 2.575.934 3.927.555 1.364 1.302 2.767 2.08 4.055.78 1.288 1.6 2.474 2.307 3.404.688.905 1.316 1.633 1.711 1.947l.936-1.172zM6 9a6 6 0 016-6V1.5A7.5 7.5 0 004.5 9H6zm6-6a6 6 0 016 6h1.5A7.5 7.5 0 0012 1.5V3zm2.5 6a2.5 2.5 0 01-2.5 2.5V13a4 4 0 004-4h-1.5zM12 11.5A2.5 2.5 0 019.5 9H8a4 4 0 004 4v-1.5zM9.5 9A2.5 2.5 0 0112 6.5V5a4 4 0 00-4 4h1.5zM12 6.5A2.5 2.5 0 0114.5 9H16a4 4 0 00-4-4v1.5z">
+                        </path>
+                    </svg>
+                    <p>Pick Up</p>
+                </div>
+            </div>
+            <div class="flex w-1/2 md:w-2/5 items-center justify-between bg-gray-100 rounded-full font-medium">
+                <p class="w-1/2 bg-white text-center py-1 rounded-full border">Home/Office</p>
+                <p class="w-1/2  text-center py-1 rounded-full ">APO/FPO</p>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-3">
+                    <input class="border border-gray-500 rounded-md px-2 py-4 w-full" type="text"
+                        placeholder="First Name">
+                    <input class="border border-gray-500 rounded-md px-2 py-4 w-full" type="text"
+                        placeholder="Last Name">
+                </div>
+                <div>
+                    <input class="border border-gray-500 rounded-md px-2 py-4 w-full" type="text"
+                        placeholder="Start typing address">
+                    <a class="text-xs underline text-gray-500" href="#">Enter address manually</a>
+                </div>
+                <div class="flex gap-4">
+                    <input class="border border-gray-500 rounded-md px-2 py-4 w-full" type="text" placeholder="Email">
+                    <input class="border border-gray-500 rounded-md px-2 py-4 w-full" type="text"
+                        placeholder="Phone Number">
+                </div>
+                <div class="flex justify-end">
+                    <a class="w-full md:w-fit bg-gray-200 text-gray-400 font-medium text-center  px-12 py-4 rounded-full"
+                        href="#">Save
+                        &
+                        Continue</a>
+                </div>
+            </div>
+            <hr>
+            <div class="py-6 border-b text-2xl text-gray-500">
+                <h1>Payment</h1>
+            </div>
+            <div class="py-6 border-b text-2xl text-gray-500">
+                <h1>Order Review</h1>
+            </div>
+        </div>
+
+        <!-- IN YOUR BAG -->
+        <div class="hidden md:block col-span-full md:col-span-3 space-y-6 py-6">
+            <div class="flex text-2xl justify-between items-center">
+                In Your Bag
+                <a href="#" class="text-sm underline-offset-4 underline font-medium">Edit</a>
+            </div>
+            <div class="w-full shrink-0">
+                <div class="flex justify-between w-full">
+                    <p class="flex gap-2">Subtotal <img src="../../src/icon/question-circle.svg" alt="more information">
+                    </p>
+                    <p>$160.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="flex gap-2">Estimated Shipping<img src="../../src/icon/question-circle.svg"
+                            alt="more information">
+                    </p>
+                    <p>$8.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p class="flex gap-2">Estimated Tax <img src="../../src/icon/question-circle.svg"
+                            alt="more information">
+                    </p>
+                    <p>$0.00</p>
+                </div>
+                <div class="flex justify-between">
+                    <p>Total</p>
+                    <p>$168.00</p>
+                </div>
+            </div>
+            <p>Arrives by Tue, May 21</p>
+            <div class="flex gap-6 w-full">
+                <img class="w-12 h-12"
+                    src="https://static.nike.com/a/images/f_png,q_auto,w_80,h_80,c_pad,e_sharpen:100/6f48de60-d1eb-4282-b61a-53edd3ecaeeb/DV3337_006_BRAND_A"
+                    alt="shoes">
+                <div class="text-gray-600">
+                    <p class="text-black">Nike Air Max Dn Shoes</p>
+                    <p>Style #: DV3337-006</p>
+                    <p>Size: M 7 / W 8.5</p>
+                    <p>Color: Black/Black/Metallic Dark Grey/Black</p>
+                    <p>Qty: 1 @ $160.00</p>
+                    <p>$160.00</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer-component></footer-component>
+    <script src="../../script/index.js" type="module"></script>
+</body>
+
+</html>

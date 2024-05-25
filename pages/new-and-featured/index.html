@@ -1,0 +1,299 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
+    <title>New & Featured</title>
+</head>
+
+<body class="flex flex-col gap-1 items-center">
+    <navbar-component></navbar-component>
+    <div class="flex flex-col bg-gray-50 py-4 w-full items-center border-b">
+        <div class="flex max-w-[768px] justify-evenly items-center w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+            </svg>
+            <a href="#">Members: Free Shipping On Order $50+</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </div>
+    </div>
+    <section class="flex justify-between w-full p-4 max-w-[1920px]">
+        <h1 class="text-2xl font-medium">New Release <span>(1713)</span></h1>
+        <div class="flex items-center gap-6">
+            <div class="flex items-center gap-4">
+                <p>Hide Filters</p>
+                <svg aria-hidden="true" class="icon-filter-ds" focusable="false" viewBox="0 0 24 24" role="img"
+                    width="24px" height="24px" fill="none">
+                    <path stroke="currentColor" stroke-width="1.5" d="M21 8.25H10m-5.25 0H3"></path>
+                    <path stroke="currentColor" stroke-width="1.5" d="M7.5 6v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z"
+                        clip-rule="evenodd"></path>
+                    <path stroke="currentColor" stroke-width="1.5" d="M3 15.75h10.75m5 0H21"></path>
+                    <path stroke="currentColor" stroke-width="1.5"
+                        d="M16.5 13.5v0a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="flex items-center gap-4">
+                <p>Hide Filters</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section class="grid grid-cols-12  w-full p-4 max-w-[1920px] text-lg">
+        <section class="hidden lg:block col-span-2  p-5">
+            <div class="flex gap-4 pb-6 items-center">
+                <p>Pick Up Today</p>
+                <input type="checkbox">
+            </div>
+            <hr>
+            <div class="flex flex-col gap-2 py-4">
+                <a href="#">Shoes</a>
+                <a href="#">Tops & T-Shirts</a>
+                <a href="#">Shorts</a>
+                <a href="#">Hoodies & Pullovers</a>
+                <a href="#">Jackets & Vests</a>
+                <a href="#">Pants & Tights</a>
+                <a href="#">Swimming</a>
+                <a href="#">Socks</a>
+                <a href="#">Accessories & Equipment</a>
+            </div>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Gender</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="checkbox4">
+                    <label for="checkbox4">Men</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox5">
+                    <label for="checkbox5">Women</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox6">
+                    <label for="checkbox6">Unisex</label>
+                </div>
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Kids</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="checkbox7">
+                    <label for="checkbox7">Boys</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="checkbox8">
+                    <label for="checkbox8">Girls</label>
+                </div>
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Color</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div class="flex flex-wrap justify-evenly gap-4 text-sm p-4">
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-black h-12 w-12 rounded-full"></div>
+                        <p>Black</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-cyan-500 h-12 w-12 rounded-full"></div>
+                        <p>Blue</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-yellow-700 h-12 w-12 rounded-full"></div>
+                        <p>Brown</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-green-500 h-12 w-12 rounded-full"></div>
+                        <p>Green</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-gray-500 h-12 w-12 rounded-full"></div>
+                        <p>Grey</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-black h-12 w-12 rounded-full"></div>
+                        <p>Multi-<br>Color</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-orange-500 h-12 w-12 rounded-full"></div>
+                        <p>Orange</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-pink-400 h-12 w-12 rounded-full"></div>
+                        <p>Pink</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-purple-600 h-12 w-12 rounded-full"></div>
+                        <p>Purple</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-red-500 h-12 w-12 rounded-full"></div>
+                        <p>Red</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-white border h-12 w-12 rounded-full"></div>
+                        <p>White</p>
+                    </div>
+                    <div class="flex flex-col gap-1 items-center">
+                        <div class="bg-yellow-400 h-12 w-12 rounded-full"></div>
+                        <p>Yellow</p>
+                    </div>
+                </div>
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Shop by Price</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="priceCheckbox">
+                    <label for="priceCheckbox">$0 - $25</label>
+                </div>
+
+                <div><input type="checkbox" id="priceCheckbox2">
+                    <label for="priceCheckbox2">$25 - $50</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="priceCheckbox3">
+                    <label for="priceCheckbox3">$50 - $100</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="priceCheckbox4">
+                    <label for="priceCheckbox4">$100 - $150</label>
+                </div>
+
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Brand</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="brandCheckbox1">
+                    <label for="brandCheckbox1">Nike Sportswear</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="brandCheckbox2">
+                    <label for="brandCheckbox2">Jordan</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="brandCheckbox3">
+                    <label for="brandCheckbox3">Nike By You</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="brandCheckbox4">
+                    <label for="brandCheckbox4">Converse</label>
+                </div>
+
+
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Sports & Activities</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="categoryCheckbox1">
+                    <label for="categoryCheckbox1">Lifestyle</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="categoryCheckbox2">
+                    <label for="categoryCheckbox2">Running</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="categoryCheckbox3">
+                    <label for="categoryCheckbox3">Training & Gym</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="categoryCheckbox4">
+                    <label for="categoryCheckbox4">Basketball</label>
+                </div>
+
+            </details>
+            <details class="border-t-2 py-4">
+                <summary class="flex items-center justify-between">
+                    <p class="font-medium">Best For</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67" />
+                    </svg>
+                </summary>
+                <div>
+                    <input type="checkbox" id="weatherCheckbox1">
+                    <label for="weatherCheckbox1">Wet Weather Conditions</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="weatherCheckbox2">
+                    <label for="weatherCheckbox2">Cold Weather</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="weatherCheckbox3">
+                    <label for="weatherCheckbox3">Dry Weather Conditions</label>
+                </div>
+
+            </details>
+        </section>
+        <section id="featuredProductList"
+            class="flex flex-wrap  justify-center items-center gap-4 col-span-12 lg:col-span-10  max-w-[1920px]">
+        </section>
+    </section>
+
+    <script src="../../script/index.js" type="module"></script>
+    <script src="./components/featured-product.js"></script>
+</body>
+
+</html>

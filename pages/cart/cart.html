@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
+    <title>Cart. Nike Store.</title>
+</head>
+
+<body class="flex flex-col items-center">
+    <navbar-component></navbar-component>
+    <section class="grid grid-cols-12 max-w-screen h-fit gap-6 py-20 px-4">
+        <!-- Product Detail -->
+        <section class="col-span-full md:col-span-8 gap-4 space-y-4">
+            <div class="border p-4">
+                <h2 class="font-bold text-xl text-orange-600">Members get free shipping on orders $50+</h2>
+                <p>Become a Nike Member for fast free shipping on orders $50+ <a href="#">Join us</a> or <a
+                        href="#">Sign-in</a></p>
+            </div>
+            <h1 class="text-2xl">Bag</h1>
+            <!-- Card -->
+            <div class="flex gap-4">
+                <img class="w-40 h-40" src="../../src/images/spotlight/spotlight-1.jpg" alt="">
+                <!-- Content -->
+                <div class="flex flex-col-reverse md:flex-row w-full md:justify-between">
+                    <div class="flex flex-col flex-1 justify-between">
+                        <div class="space-y-1">
+                            <h2 class="font-medium">Nike Dunk Low Retro SE</h2>
+                            <p class="text-gray-500">Men's Shoes</p>
+                            <p class="hidden md:block">Medium Soft Pink/Sail/Malachite</p>
+                            <div class="flex gap-3 text-gray-500">
+                                <div>
+                                    <label for="sizes">Size:</label>
+                                    <select name="sizes" id="sizes">
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="15">15</option>
+                                        <option value="17.5">17.5</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="sizes">Quantity:</label>
+                                    <select name="sizes" id="sizes">
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="flex gap-4">
+                            <li class="css-1fqekfo e61j6oj0"><button data-version="__VERSION_HERE__"
+                                    class=" css-ao99ai-TertiaryLightButton-disabledButtonStyles-commonUnderlineStyles-tertiaryDarkButtonStyles e61j6oj2"
+                                    type="button" aria-label="Move to Favorites"
+                                    data-automation="move-to-favorites-button" name="move-to-favorites-button"><svg
+                                        aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
+                                        height="24px" fill="none">
+                                        <path stroke="currentColor" stroke-width="1.5"
+                                            d="M16.794 3.75c1.324 0 2.568.516 3.504 1.451a4.96 4.96 0 010 7.008L12 20.508l-8.299-8.299a4.96 4.96 0 010-7.007A4.923 4.923 0 017.205 3.75c1.324 0 2.568.516 3.504 1.451l.76.76.531.531.53-.531.76-.76a4.926 4.926 0 013.504-1.451">
+                                        </path>
+                                    </svg></button></li>
+                            <li class="css-1fqekfo e61j6oj0"><button data-version="__VERSION_HERE__"
+                                    class=" css-ao99ai-TertiaryLightButton-disabledButtonStyles-commonUnderlineStyles-tertiaryDarkButtonStyles e61j6oj2"
+                                    type="button" aria-label="Remove" data-automation="remove-item-button"
+                                    name="remove-item-button"><svg aria-hidden="true" focusable="false"
+                                        viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none">
+                                        <path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.5"
+                                            d="M14.25 7.5v12m-4.5-12v12M5.25 6v13.5c0 1.24 1.01 2.25 2.25 2.25h9c1.24 0 2.25-1.01 2.25-2.25V5.25h2.75m-2.75 0H21m-12-3h5.25c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5H3">
+                                        </path>
+                                    </svg></button></li>
+                        </ul>
+                    </div>
+                    <p class="font-medium">$125.00</p>
+                </div>
+            </div>
+            <div class="font-medium">
+                <h2>Shipping</h2>
+                <p class="font-normal">Arrives by Wed, Apr 24 <a class="font-medium underline underline-offset-4"
+                        href="#">Edit Location</a></p>
+            </div>
+            <div class="font-medium">
+                <h2>Free Pickup</h2>
+                <a class="underline underline-offset-4">Find a Store</a>
+            </div>
+            <hr>
+        </section>
+        <!-- Payment Summary -->
+        <section class="col-span-full md:col-span-4 space-y-2">
+            <h1 class="text-2xl">Summary</h1>
+            <details class="w-full space-y-4">
+                <summary class="flex items-center md:justify-between justify-start gap-4 w-full font-medium">Do you have
+                    a Promo Code? <img src="../../src/icon/chevron-down.svg" alt=""> </summary>
+                <div class="flex gap-2">
+                    <input class="border flex-1 py-1 rounded-md" type="text">
+                    <a class="py-1 px-6 border rounded-full" href="#">Apply</a>
+                </div>
+            </details>
+            <div class="flex justify-between">
+                <p class="flex gap-2">Subtotal <img src="../../src/icon/question.svg" alt=""> </p>
+                <p>$125.00</p>
+            </div>
+            <div class="flex justify-between ">
+                <p>Estimated Shipping & Handling</p>
+                <p>$8.00</p>
+            </div>
+            <div class="flex justify-between">
+                <p class="flex gap-2">Estimated Tax <img src="../../src/icon/question.svg" alt=""></p>
+                <p>-</p>
+            </div>
+            <div class="space-y-4">
+                <hr>
+                <div class="flex justify-between">
+                    <p>Total</p>
+                    <p>$133.00</p>
+                </div>
+                <hr>
+            </div>
+            <div class="hidden md:flex flex-col w-full h-fit gap-2 pt-6">
+                <a class="bg-black p-4 rounded-full text-white text-center" href="../../pages/checkout/index.html">Checkout</a>
+                <a class="flex bg-gray-100 p-4 rounded-full  justify-center items-center border" href="#"> <img
+                        class="w-fit h-4" src="https://www.nike.com/assets/experience/pet/payment-icons/paypal@2x.png"
+                        alt=""></a>
+            </div>
+        </section>
+        <section class="col-span-full">
+            <h1 class="text-2xl font-medium">Favorites</h1>
+            <p>
+                Want to view your favorites?
+                <a class="underline underline-offset-4 text-gray-500 font-medium" href="#">Join us</a> or <a
+                    class="underline underline-offset-4 text-gray-500 font-medium" href="#">Sign-in</a>
+            </p>
+        </section>
+    </section>
+    <div class="bottom-0 fixed md:hidden w-full text-center bg-white py-4 px-3 z-10">
+        <a class="flex bg-black p-4 rounded-full justify-center text-white" href="../../pages/checkout/index.html">Go to
+            Checkout</a>
+    </div>
+    <footer-component></footer-component>
+    <!-- <div class="bg-red-100 p-10">
+    </div> -->
+    <script src="../../script/index.js" type="module"></script>
+</body>
+
+</html>

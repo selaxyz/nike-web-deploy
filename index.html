@@ -1,96 +1,132 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.nike.com/favicon.ico?v=1"
+      rel="icon"
+      type="image/x-icon"
+    />
     <title>Nike</title>
-</head>
+  </head>
 
-<body class="flex flex-col items-center">
+  <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
+    <!-- Hero Section -->
     <div class="hidden md:block object-cover bg-yellow-100 h-max w-full">
-        <img class="object-cover bg-cover w-full h-fit" src="./src/images/hero/nike-just-do-it.jpg" alt="">
+      <img
+        class="object-cover bg-cover w-full h-fit"
+        src="./src/images/hero/nike-just-do-it.jpg"
+        alt=""
+      />
     </div>
-    <div class=" md:hidden object-cover bg-yellow-100 h-fit w-full">
-        <img class="object-cover bg-cover w-full h-fit" src="./src/images/hero/hero-bg-small.png" alt="">
+    <div class="md:hidden object-cover bg-yellow-100 h-fit w-full">
+      <img
+        class="object-cover bg-cover w-full h-fit"
+        src="./src/images/hero/hero-bg-small.png"
+        alt=""
+      />
     </div>
+    <!-- Call To Action Section -->
     <div class="flex flex-col p-10 gap-4 items-center py-10">
-        <div class="flex flex-col items-center">
-            <h4 class="font-medium">Brooks's Looks</h4>
-            <h1 class="font-black text-5xl lg:text-7xl">GEAR-UP FOR<br>THE
-                MAJORS
-            </h1>
-        </div>
-        <p>The next generation of Air Technology is here</p>
-        <div class="flex flex-row gap-2">
-            <a href="./pages/new-and-featured/index.html"
-                class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-500">
-                Shop the Collection
-            </a>
-        </div>
+      <div class="flex flex-col items-center">
+        <h4 class="font-medium">Brooks's Looks</h4>
+        <h1 class="font-black text-5xl lg:text-7xl">
+          GEAR-UP FOR<br />THE MAJORS
+        </h1>
+      </div>
+      <p>The next generation of Air Technology is here</p>
+      <div class="flex flex-row gap-2">
+        <a
+          href="./pages/new-and-featured/index.html"
+          class="bg-black text-white px-4 py-2 rounded-full hover:bg-gray-500"
+        >
+          Shop the Collection
+        </a>
+      </div>
     </div>
+    <!-- Trending Section -->
     <div class="px-10 py-10 w-full max-w-[1920px]">
-        <h1 class="text-2xl pb-10">Trending</h1>
-        <div id="productList"
-            class="product-list flex flex-no-wrap gap-3 overflow-x-scroll md:overflow-x-hidden font-medium items-start pb-10 ">
-        </div>
+      <h1 class="text-2xl pb-10">Trending</h1>
+      <div
+        id="productList"
+        class="product-list flex flex-no-wrap gap-3 overflow-x-scroll md:overflow-x-hidden font-medium items-start pb-10"
+      ></div>
     </div>
+    <!-- Featured Section -->
     <div class="p-10 w-full">
-        <h2 class="text-2xl pb-10">Featured</h2>
-        <div class="flex max-[650px]:flex-col w-full h-max gap-4">
-            <div
-                class="bg-[url('./src/images/featured/featured-1.jpg')] object-cover md:w-1/2 lg:h-[800px] md:h-[860px] h-[450px] w-full  bg-no-repeat bg-cover relative">
-                <div class="absolute bottom-14 px-10 w-full text-white">
-                    <div class="flex-col pb-5">
-                        <h4>Newest Jordan Essentials</h4>
-                        <h2 class="text-2xl">Air Jordan</h2>
-                    </div>
-                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300"
-                        href="#">Shop</a>
-                </div>
+      <h2 class="text-2xl pb-10">Featured</h2>
+      <div class="flex max-[650px]:flex-col w-full h-max gap-4">
+        <div
+          class="bg-[url('./src/images/featured/featured-1.jpg')] object-cover md:w-1/2 lg:h-[800px] md:h-[860px] h-[450px] w-full bg-no-repeat bg-cover relative"
+        >
+          <div class="absolute bottom-14 px-10 w-full text-white">
+            <div class="flex-col pb-5">
+              <h4>Newest Jordan Essentials</h4>
+              <h2 class="text-2xl">Air Jordan</h2>
             </div>
-            <div
-                class="bg-[url('./src/images/featured/featured-2.jpg')]  object-cover md:w-1/2 lg:h-[800px] md:h-[860px] h-[450px] w-full  bg-no-repeat bg-cover relative">
-                <div class="absolute bottom-14 px-10 w-full text-white">
-                    <div class="flex flex-col pb-5">
-                        <h4>For All Walks</h4>
-                        <h2 class="text-2xl">Motiva</h2>
-                    </div>
-                    <a class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300"
-                        href="#">Shop</a>
-                </div>
+            <a
+              class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300"
+              href="#"
+              >Shop</a
+            >
+          </div>
+        </div>
+        <div
+          class="bg-[url('./src/images/featured/featured-2.jpg')] object-cover md:w-1/2 lg:h-[800px] md:h-[860px] h-[450px] w-full bg-no-repeat bg-cover relative"
+        >
+          <div class="absolute bottom-14 px-10 w-full text-white">
+            <div class="flex flex-col pb-5">
+              <h4>For All Walks</h4>
+              <h2 class="text-2xl">Motiva</h2>
             </div>
+            <a
+              class="bg-white text-black font-medium px-4 py-2 rounded-full hover:bg-gray-300"
+              href="#"
+              >Shop</a
+            >
+          </div>
         </div>
+      </div>
     </div>
+    <!-- Classics Spotlight Section -->
     <div class="p-10 max-w-[1920px] w-full">
-        <h2 class="text-2xl pb-10">Classics Spotlight</h2>
-        <div id="spotlightList"
-            class="sport-item flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10">
-        </div>
+      <h2 class="text-2xl pb-10">Classics Spotlight</h2>
+      <div
+        id="spotlightList"
+        class="sport-item flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"
+      ></div>
     </div>
+    <!-- Shop By Sport Section -->
     <div class="p-10 max-w-[1920px] w-full">
-        <h2 class="text-2xl pb-10">Shop by Sport</h2>
-        <div id="sportList"
-            class="sport-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10">
-        </div>
+      <h2 class="text-2xl pb-10">Shop by Sport</h2>
+      <div
+        id="sportList"
+        class="sport-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"
+      ></div>
     </div>
+    <!-- Popular Right Now Section -->
     <div class="p-10 max-w-[1920px] w-full">
-        <h2 class="text-2xl pb-10">Popular Right Now</h2>
-        <div id="popularList"
-            class="popular-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10">
-        </div>
+      <h2 class="text-2xl pb-10">Popular Right Now</h2>
+      <div
+        id="popularList"
+        class="popular-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"
+      ></div>
     </div>
+    <!-- Nike Membership -->
     <div class="p-10 max-w-[1920px] w-full">
-        <h2 class="text-2xl pb-10">Nike Membership</h2>
-        <div id="membershipList"
-            class="membership-item flex flex-nowrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10 ">
-        </div>
-
+      <h2 class="text-2xl pb-10">Nike Membership</h2>
+      <div
+        id="membershipList"
+        class="membership-item flex flex-nowrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"
+      ></div>
     </div>
     <menu-component></menu-component>
     <footer-component></footer-component>
@@ -100,6 +136,5 @@
     <script src="./pages/home/popular.js"></script>
     <script src="./pages/home/membership.js"></script>
     <script src="./pages/home/classic-spotlight.js"></script>
-</body>
-
+  </body>
 </html>

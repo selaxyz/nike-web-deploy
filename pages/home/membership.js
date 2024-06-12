@@ -1,54 +1,59 @@
+/**
+ * Represents a list of membership options.
+ * Renders each membership item with its name, description, image, and call-to-action button.
+ */
+
 const memberships = [
   {
-    name: "The Best of Nike",
+    name: 'The Best of Nike',
     desc: "It's Better as a Member",
-    image: "./src/images/membership/membership-1.jpg",
-    cta: "Sign Up"
+    image: './src/images/membership/membership-1.jpg',
+    cta: 'Sign Up',
   },
   {
-    name: "Member Product",
-    desc: "Your Exclusive Access",
-    image: "./src/images/membership/membership-2.jpg",
-    cta: "Shop"
+    name: 'Member Product',
+    desc: 'Your Exclusive Access',
+    image: './src/images/membership/membership-2.jpg',
+    cta: 'Shop',
   },
   {
-    name: "Member Rewards",
-    desc: "How We Say Thank You",
-    image: "./src/images/membership/membership-3.jpg",
-    cta: "Celebrate"
+    name: 'Member Rewards',
+    desc: 'How We Say Thank You',
+    image: './src/images/membership/membership-3.jpg',
+    cta: 'Celebrate',
   },
   {
-    name: "Sports & Wellness Apps",
+    name: 'Sports & Wellness Apps',
     desc: "Movement Where You're At",
-    image: "./src/images/membership/membership-4.jpg",
-    cta: "Move"
+    image: './src/images/membership/membership-4.jpg',
+    cta: 'Move',
   },
   {
-    name: "Nike By You",
-    desc: "Your Customization Service",
-    image: "./src/images/membership/membership-5.jpg",
-    cta: "Customize"
+    name: 'Nike By You',
+    desc: 'Your Customization Service',
+    image: './src/images/membership/membership-5.jpg',
+    cta: 'Customize',
   },
   {
-    name: "SNKRS",
-    desc: "Your Ultimate Sneaker Community",
-    image: "./src/images/membership/membership-6.jpg",
-    cta: "Explore"
+    name: 'SNKRS',
+    desc: 'Your Ultimate Sneaker Community',
+    image: './src/images/membership/membership-6.jpg',
+    cta: 'Explore',
   },
   {
-    name: "Member Interests",
-    desc: "Shop Your Way",
-    image: "./src/images/membership/membership-7.jpg",
-    cta: "Add Interests"
+    name: 'Member Interests',
+    desc: 'Shop Your Way',
+    image: './src/images/membership/membership-7.jpg',
+    cta: 'Add Interests',
   },
 ];
 
-const membershipList = document.getElementById("membershipList");
+const membershipList = document.getElementById('membershipList');
 
 memberships.forEach((membership) => {
-  const membershipItem = document.createElement("div");
-  membershipItem.classList.add("membership-item");
-  membershipItem.classList.add("flex-none", "lg:w-1/3","w-3/4");
+  const membershipItem = document.createElement('div');
+  membershipItem.classList.add('membership-item');
+  membershipItem.classList.add('flex-none', 'lg:w-1/3', 'w-3/4');
   membershipItem.innerHTML = `<div class="bg-[url('${membership.image}')] md:h-[600px] h-[450px] bg-no-repeat bg-cover object-cover relative">
     <div class="absolute bottom-10 px-10 w-full text-white items-end">
         <div class="flex flex-col pb-10">

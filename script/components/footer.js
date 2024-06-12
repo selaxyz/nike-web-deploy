@@ -1,114 +1,26 @@
-export class Footer extends HTMLElement{
-    constructor(){
-        super();
-    }
+/**
+ * Represents the footer component of the website.
+ * @class
+ * @extends HTMLElement
+ */
 
-    connectedCallback(){
-        this.classList.add("w-full")
-        this.innerHTML =` 
+export class Footer extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.classList.add('w-full');
+    this.innerHTML = ` 
         <section class="flex flex-col items-center  bg-black p-10">
         <div class="w-full max-w-[1440px]  gap-10">
             <div class="flex flex-col md:flex-row w-full">
                 <div class="flex flex-col md:flex-row flex-1 justify-between text-xs">
-                    <div class="flex flex-col gap-3 font-bold text-white">
-                        <h3>RESOURCES</h3>
-                        <p>GIFT CARDS</p>
-                        <p>FIND A STORE</p>
-                        <p>BECOME A MEMBER</p>
-                        <p>NIKE X NBA</p>
-                        <p>NIKE JOURNAL</p>
-                        <p>Site Feedback</p>
-                    </div>
+                
+                <footer-category data-sub="none" class="font-bold text-white"></footer-category>
                     <hr class="md:hidden mt-4 opacity-30">
-                    <details class="md:hidden py-4">
-                        <summary class="font-bold flex justify-between text-white py-2">
-                            HELP
-                            <img src="../src/icon/plus.svg" alt="">
-                        </summary>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>Get Help</p>
-                            <p>Order Status</p>
-                            <p>Shipping and Delivery</p>
-                            <p>Returns</p>
-                            <p>Order Cancellation</p>
-                            <p>Payment Options</p>
-                            <p>Gift Card Balance</p>
-                            <p>Contact Us</p>
-                        </div>
-                        <br>
-                        <br>
-                        <hr class="opacity-30">
-                    </details>
-                    <div class="hidden md:block">
-                        <h3 class="font-bold md:flex md:py-2 text-white">
-                            HELP
-                        </h3>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>Get Help</p>
-                            <p>Order Status</p>
-                            <p>Shipping and Delivery</p>
-                            <p>Returns</p>
-                            <p>Order Cancellation</p>
-                            <p>Payment Options</p>
-                            <p>Gift Card Balance</p>
-                            <p>Contact Us</p>
-                        </div>
-
-                    </div>
-                    <details class="md:hidden py-4">
-                        <summary class="font-bold text-white flex justify-between py-2">COMPANY <img
-                                src="./src/icon/plus.svg" alt=""></summary>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>About Nike</p>
-                            <p>News</p>
-                            <p>Careers</p>
-                            <p>Investors</p>
-                            <p>Purpose</p>
-                            <p>Sustainability</p>
-                        </div>
-                        <br>
-                        <br>
-                        <hr class="opacity-30">
-                    </details>
-                    <div class="hidden md:block">
-                        <h3 class="md:flex md:py-2 font-bold text-white">COMPANY</h3>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>About Nike</p>
-                            <p>News</p>
-                            <p>Careers</p>
-                            <p>Investors</p>
-                            <p>Purpose</p>
-                            <p>Sustainability</p>
-                        </div>
-
-                    </div>
-                    <details class="md:hidden py-4">
-                        <summary class="font-bold text-white flex justify-between py-2">PROMOTIONS & DISCOUNTS <img
-                                src="./src/icon/plus.svg" alt=""></summary>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>Student</p>
-                            <p>Military</p>
-                            <p>Teacher</p>
-                            <p>First Responders & Medical</p>
-                            <p> Professionals</p>
-                            <p>Birthday</p>
-                        </div>
-                        <br>
-                        <br>
-                        <hr class="opacity-30">
-                    </details>
-
-                    <div class="hidden md:block">
-                        <h3 class="md:flex md:py-2 font-bold text-white">PROMOTIONS & DISCOUNTS</h3>
-                        <div class="flex flex-col gap-3 text-gray-500">
-                            <p>Student</p>
-                            <p>Military</p>
-                            <p>Teacher</p>
-                            <p>First Responders & Medical</p>
-                            <p> Professionals</p>
-                            <p>Birthday</p>
-                        </div>
-                    </div>
+                    
+                    <footer-category class="flex flex-col md:flex-row w-full justify-evenly"></footer-category>
                 </div>
                 <div class="flex basis-1/4 md:justify-end gap-5 md:py-0 py-4 text-white">
                     <svg width="30px" fill="#ffff" height="30px" viewBox="0 0 24 24">
@@ -155,8 +67,130 @@ export class Footer extends HTMLElement{
         </div>
     </section>
     
-    `
-    }
+    `;
+  }
 }
 
-customElements.define("footer-component", Footer);
+const category = [
+  { title: 'HELP', category: 'help' },
+  { title: 'COMPANY', category: 'company' },
+  { title: 'PROMOTION', category: 'promotion' },
+];
+
+class FooterCategory extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    const sub = this.dataset.sub;
+    sub !== 'none'
+      ? this.handleFooterCategory(category)
+      : this.handleFooterShortcut();
+  }
+  handleFooterCategory(data) {
+    data.forEach((item) => {
+      const categoryItem = document.createElement('div');
+      categoryItem.innerHTML = `
+    <div>
+        <details class="md:hidden py-4">
+        <summary class="font-bold flex justify-between text-white py-2">
+            ${item.title}
+            <img src="../src/icon/plus.svg" alt="">
+        </summary>
+        <footer-item class="flex flex-col gap-3 text-gray-500" data-category="${item.category}"></footer-item>
+        <br>
+        <br>
+        <hr class="opacity-30">
+        </details>
+        <div class="hidden md:block">
+            <h3 class="font-bold md:flex pb-4 text-white">
+                ${item.title}
+            </h3>
+        <footer-item class="flex flex-col gap-3 text-gray-500" data-category="${item.category}"></footer-item>
+        </div>
+   </div>
+        `;
+      this.appendChild(categoryItem);
+    });
+  }
+  handleFooterShortcut() {
+    const item = document.createElement('div')
+    item.innerHTML =  
+    `<footer-item class="space-y-4" data-category="shortcut"></footer-item>`
+   this.append(item)
+   ;
+  }
+}
+
+const help = [
+  { label: 'Get Help', link: '#' },
+  { label: 'Order Status', link: '#' },
+  { label: 'Shipping and Delivery', link: '#' },
+  { label: 'Returns', link: '#' },
+  { label: 'Order Cancellation', link: '#' },
+  { label: 'Payment Options', link: '#' },
+  { label: 'Gift Card Balance', link: '#' },
+  { label: 'Contact Us', link: '#' },
+];
+
+const company = [
+  { label: 'About Nike', link: '#' },
+  { label: 'News', link: '#' },
+  { label: 'Careers', link: '#' },
+  { label: 'Investors', link: '#' },
+  { label: 'Purpose', link: '#' },
+  { label: 'Sustainability', link: '#' },
+];
+
+const promotion = [
+  { label: 'Student', link: '#' },
+  { label: 'Military', link: '#' },
+  { label: 'Teacher', link: '#' },
+  { label: 'First Responders & Medical', link: '#' },
+  { label: 'Professionals', link: '#' },
+  { label: 'Birthday', link: '#' },
+];
+
+const shortcut = [
+  { label: 'GIFT CARDS', link: '#' },
+  { label: 'FIND A STORE', link: '#' },
+  { label: 'BECOME A MEMBER', link: '#' },
+  { label: 'NIKE X NBA', link: '#' },
+  { label: 'NIKE JOURNAL', link: '#' },
+  { label: 'Site Feedback', link: '#' },
+];
+
+class FooterItem extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+    const category = this.dataset.category;
+    switch (category) {
+      case 'help':
+        this.handleFooterItem(help);
+        break;
+      case 'company':
+        this.handleFooterItem(company);
+        break;
+      case 'promotion':
+        this.handleFooterItem(promotion);
+        break;
+      case 'shortcut':
+        this.handleFooterItem(shortcut);
+        break;
+    }
+  }
+
+  handleFooterItem(data) {
+    data.forEach((item) => {
+      const footerItem = document.createElement('div');
+      footerItem.innerHTML = `<a href="${item.link}">${item.label}</a>`;
+      this.appendChild(footerItem);
+    });
+  }
+}
+
+customElements.define('footer-category', FooterCategory);
+customElements.define('footer-item', FooterItem);
+customElements.define('footer-component', Footer);

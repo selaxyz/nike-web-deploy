@@ -1,371 +1,618 @@
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <link href="https://www.nike.com/favicon.ico?v=1" rel="icon" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://www.nike.com/favicon.ico?v=1"
+      rel="icon"
+      type="image/x-icon"
+    />
     <title>Nike Aire Max Plus Drift</title>
-</head>
+  </head>
 
-<body class="flex flex-col items-center">
+  <body class="flex flex-col items-center">
     <navbar-component></navbar-component>
+    <!-- Special Offer Section -->
     <div class="flex flex-col bg-gray-50 py-4 w-full items-center border-b">
-        <div class="flex max-w-[768px] justify-evenly items-center w-full">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-            </svg>
-            <a href="#">Members: Free Shipping On Order $50+</a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-            </svg>
-        </div>
+      <div class="flex max-w-[768px] justify-evenly items-center w-full">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-left"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+          />
+        </svg>
+        <a href="#">Members: Free Shipping On Order $50+</a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-chevron-right"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
+      </div>
     </div>
+    <!-- Product Detail Section -->
     <section class="flex flex-col w-full items-center py-12">
-        <div class="grid grid-cols-12 w-full max-w-[1200px]">
-            <div class="md:hidden p-6 col-span-full space-y-4 font-medium">
-                <div>
-                    <h1 class="text-2xl">Nike Aire Max Plus Drift</h1>
-                    <h2 class="text-lg">Men's Shoes</h2>
-                </div>
-                <p class="text-lg">$185</p>
-            </div>
-            <div class="grid grid-cols-subgrid col-span-full md:col-span-8 md:sticky top-0 h-fit">
-                <div class="space-y-2 hidden md:block md:col-span-1">
-                    <img class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                    <img class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                    <img class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                    <img class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                    <img class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                </div>
-                <div class="col-span-full md:col-span-7  relative md:pr-12 h-[700px] w-full">
-                    <img class="rounded-md bg-cover object-cover w-full h-full"
-                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="">
-                    <div
-                        class="absolute top-6 left-6 flex items-center justify-center w-fit bg-white py-3 px-6 rounded-full gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                            class="bi bi-star-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                        </svg>
-                        <p>Highly Rated</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-subgrid col-span-full md:col-span-4 ">
-                <div class="hidden md:block col-span-full space-y-4 px-6 font-medium">
-                    <div>
-                        <h1 class="text-2xl">Nike Aire Max Plus Drift</h1>
-                        <h2 class="text-lg">Men's Shoes</h2>
-                    </div>
-                    <p class="text-lg">$185</p>
-                </div>
-                <div class="col-span-full flex flex-wrap gap-1 p-6">
-                    <img class="w-1/5 h-fit rounded-md bg-cover"
-                        src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="" />
-                    <img class="w-1/5 h-fit rounded-md bg-cover"
-                        src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="" />
-                    <img class="w-1/5 h-fit rounded-md bg-cover"
-                        src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="" />
-                    <img class="w-1/5 h-fit rounded-md bg-cover"
-                        src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="" />
-                    <img class="w-1/5 h-fit rounded-md bg-cover"
-                        src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
-                        alt="" />
-                </div>
-                <div class="grid grid-cols-subgrid gap-2 col-span-full md:col-span-4 px-6 ">
-                    <div class="col-span-full flex justify-between">
-                        <p class="text-lg">Select Size</p>
-                        <p>Size guide</p>
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                    <div class="col-span-3 md:col-span-2 text-center border py-4 rounded-md">
-                        M 3.5 / W 5
-                    </div>
-                </div>
-                <div class="col-span-full md:col-span-4 p-6 text-center">
-                    <p>
-                        4 interest-free payments of $46.25 with <br />
-                        <strong>Klarna</strong>.
-                        <button class="underline">Learn More</button>
-                    </p>
-                </div>
-                <div class="px-6 col-span-full">
-                    <a href="../../pages/cart/cart.html">
-                        <button class="w-full text-white text-lg rounded-full py-4 bg-black">
-                            Add to Bag
-                        </button>
-                    </a>
-                    <div class="py-1"></div>
-                    <button
-                        class="w-full border rounded-full text-lg py-4 bg-white flex items-center justify-center gap-2">
-                        Favourite
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
-                            class="bi bi-heart" viewBox="0 0 16 16">
-                            <path
-                                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="col-span-full py-12 px-6 space-y-6">
-                    <div>
-                        <p class="text-lg font-medium">Shipping</p>
-                        <p>You'll see our shipping options at checkout</p>
-                    </div>
-                    <div class="space-y-2">
-                        <p>Free Pickup</p>
-                        <button class="font-medium underline underline-offset-4">Find a Store</button>
-                    </div>
-                </div>
-                <div class="col-span-full md:col-span-4 space-y-6 px-6 pb-6">
-                    <div class="space-y-6">
-                        <p class="leading-8">
-                            Let your attitude have the edge in the Air Max Plus Drift, a
-                            "tuned" Air experience that offers premium stability and
-                            cushioning. Featuring airy mesh, gradient coloring and the
-                            original wavy design lines, it celebrates your defiant style.
-                        </p>
-                        <div class="pl-4">
-                            <ul class="list-disc list-outside text-start space-y-2">
-                                <li>
-                                    Shown: Football Grey/Aquarius Blue/Total Orange/Thunder Blue
-                                </li>
-                                <li>Style: FD4290-004</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <button class="font-medium underline underline-offset-4">
-                        View Product Details
-                    </button>
-                </div>
-                <div class="col-span-full py-6 px-6">
-                    <hr>
-                    <details class="py-8">
-                        <summary class="text-xl flex items-center justify-between">Shipping & Returns <svg
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                            </svg></summary>
-                        <div class="flex flex-col py-4 gap-6">
-                            <p>
-                                Free standard shipping on orders $50+ and free 60-day returns
-                                for Nike Members.
-                                <strong class="underline">Learn more</strong>.
-                                <strong class="underline">Return policy exclusions apply.</strong>
-                            </p>
-                            <a class="font-medium underline" href="#">Pick-up available at select Nike Stores.</a>
-                        </div>
-                    </details>
-                    <hr>
-                    <details class="py-8">
-                        <summary class="text-xl flex items-center justify-between">Reviews(35)
-                            <div class="flex items-center gap-3">
-                                <div class="flex gap-1 items-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                    </svg>
-                                </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-chevron-down" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
-                                </svg>
-                            </div>
-                        </summary>
-                        <div class="py-4 space-y-6">
-                            <div class="flex flex-col py-4 gap-2">
-                                <div class="flex items-center gap-2">
-                                    <div class="flex gap-1 items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                    </div>
-                                    <p>4.4 Stars</p>
-                                </div>
-                                <a class="text-lg underline underline-offset-4" href="#">Write a Review</a>
-                            </div>
-                            <div class="space-y-2">
-                                <h4 class="text-lg font-medium">Air Max Plus Drift</h4>
-                                <div class="flex items-center gap-4">
-                                    <div class="flex gap-1 items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
-                                            fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                        </svg>
-                                    </div>
-                                    <p class="text-gray-400">NikkolL376648806 - May 02, 2024</p>
-                                </div>
-                                <p>
-                                    These Nike Air Max Plus Drift Are so comfortable especially
-                                    for walking
-                                </p>
-                            </div>
-
-                            <div class="py-2">
-                                <a class="text-lg font-medium underline underline-offset-4" href="#">More Reviews</a>
-                            </div>
-                        </div>
-                    </details>
-                    <hr>
-                </div>
-            </div>
+      <div class="grid grid-cols-12 w-full max-w-[1200px]">
+        <div class="md:hidden p-6 col-span-full space-y-4 font-medium">
+          <div>
+            <h1 class="text-2xl">Nike Aire Max Plus Drift</h1>
+            <h2 class="text-lg">Men's Shoes</h2>
+          </div>
+          <p class="text-lg">$185</p>
         </div>
-    </section>
-    <section class="flex flex-col justify-center max-w-[1824px] w-full p-8">
-        <div class="w-full space-y-4 py-6">
-            <p class="text-2xl font-medium">How Others Are Wearing It</p>
-            <p class="text-lg">
-                Upload your photo or mention @Nike on Instagram for a chance to be
-                featured.
-            </p>
-            <button class="border font-medium rounded-full py-2 px-6">Upload Your Photo</button>
+        <div
+          class="grid grid-cols-subgrid col-span-full md:col-span-8 md:sticky top-0 h-fit"
+        >
+          <div class="space-y-2 hidden md:block md:col-span-1">
+            <img
+              class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-[80px] h-[80px] rounded-md bg-cover object-cover"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-span-full md:col-span-7 relative md:pr-12 h-[700px] w-full"
+          >
+            <img
+              class="rounded-md bg-cover object-cover w-full h-full"
+              src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ca23f73-976a-47c0-86f9-a6a7ab527130/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <div
+              class="absolute top-6 left-6 flex items-center justify-center w-fit bg-white py-3 px-6 rounded-full gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
+              </svg>
+              <p>Highly Rated</p>
+            </div>
+          </div>
         </div>
-        <div class="flex gap-3">
-            <div class="w-fit h-fit  relative">
-                <img class="rounded-md"
-                    src="https://static.pxlecdn.com/photos/614174058/medium/4c720f36e2271e357c27.jpeg" alt="">
-                <div class="bg-black h-fit w-fit p-2 rounded-full absolute bottom-3 left-3">
-                    <img src="../../src/icon/search-white.svg" alt="">
-                </div>
+        <div class="grid grid-cols-subgrid col-span-full md:col-span-4">
+          <div class="hidden md:block col-span-full space-y-4 px-6 font-medium">
+            <div>
+              <h1 class="text-2xl">Nike Aire Max Plus Drift</h1>
+              <h2 class="text-lg">Men's Shoes</h2>
+            </div>
+            <p class="text-lg">$185</p>
+          </div>
+          <div class="col-span-full flex flex-wrap gap-1 p-6">
+            <img
+              class="w-1/5 h-fit rounded-md bg-cover"
+              src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-1/5 h-fit rounded-md bg-cover"
+              src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-1/5 h-fit rounded-md bg-cover"
+              src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-1/5 h-fit rounded-md bg-cover"
+              src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+            <img
+              class="w-1/5 h-fit rounded-md bg-cover"
+              src="https://static.nike.com/a/images/t_PDP_144_v1/f_auto/8eab79ee-a754-4526-ad7d-cd2756d48590/air-max-plus-drift-mens-shoes-FKwJ7w.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="grid grid-cols-subgrid gap-2 col-span-full md:col-span-4 px-6"
+          >
+            <div class="col-span-full flex justify-between">
+              <p class="text-lg">Select Size</p>
+              <p>Size guide</p>
             </div>
             <div
-                class="flex flex-col gap-3 items-center justify-center text-center font-medium md:text-2xl w-[464px] rounded-md h-full bg-gray-100">
-                <p>Be one of the first to <br> show your style</p>
-                <img class="bg-black p-2 rounded-full" src="../../src/icon/plus.svg" alt="">
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
             </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+            <div
+              class="col-span-3 md:col-span-2 text-center border py-4 rounded-md"
+            >
+              M 3.5 / W 5
+            </div>
+          </div>
+          <div class="col-span-full md:col-span-4 p-6 text-center">
+            <p>
+              4 interest-free payments of $46.25 with <br />
+              <strong>Klarna</strong>.
+              <button class="underline">Learn More</button>
+            </p>
+          </div>
+          <div class="px-6 col-span-full">
+            <a href="../../pages/cart/cart.html">
+              <button
+                class="w-full text-white text-lg rounded-full py-4 bg-black"
+              >
+                Add to Bag
+              </button>
+            </a>
+            <div class="py-1"></div>
+            <button
+              class="w-full border rounded-full text-lg py-4 bg-white flex items-center justify-center gap-2"
+            >
+              Favourite
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="13"
+                height="13"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="col-span-full py-12 px-6 space-y-6">
+            <div>
+              <p class="text-lg font-medium">Shipping</p>
+              <p>You'll see our shipping options at checkout</p>
+            </div>
+            <div class="space-y-2">
+              <p>Free Pickup</p>
+              <button class="font-medium underline underline-offset-4">
+                Find a Store
+              </button>
+            </div>
+          </div>
+          <div class="col-span-full md:col-span-4 space-y-6 px-6 pb-6">
+            <div class="space-y-6">
+              <p class="leading-8">
+                Let your attitude have the edge in the Air Max Plus Drift, a
+                "tuned" Air experience that offers premium stability and
+                cushioning. Featuring airy mesh, gradient coloring and the
+                original wavy design lines, it celebrates your defiant style.
+              </p>
+              <div class="pl-4">
+                <ul class="list-disc list-outside text-start space-y-2">
+                  <li>
+                    Shown: Football Grey/Aquarius Blue/Total Orange/Thunder Blue
+                  </li>
+                  <li>Style: FD4290-004</li>
+                </ul>
+              </div>
+            </div>
+            <button class="font-medium underline underline-offset-4">
+              View Product Details
+            </button>
+          </div>
+          <div class="col-span-full py-6 px-6">
+            <hr />
+            <details class="py-8">
+              <summary class="text-xl flex items-center justify-between">
+                Shipping & Returns
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-down"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                  />
+                </svg>
+              </summary>
+              <div class="flex flex-col py-4 gap-6">
+                <p>
+                  Free standard shipping on orders $50+ and free 60-day returns
+                  for Nike Members.
+                  <strong class="underline">Learn more</strong>.
+                  <strong class="underline"
+                    >Return policy exclusions apply.</strong
+                  >
+                </p>
+                <a class="font-medium underline" href="#"
+                  >Pick-up available at select Nike Stores.</a
+                >
+              </div>
+            </details>
+            <hr />
+            <details class="py-8">
+              <summary class="text-xl flex items-center justify-between">
+                Reviews(35)
+                <div class="flex items-center gap-3">
+                  <div class="flex gap-1 items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      /></svg
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      /></svg
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      /></svg
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      /></svg
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-star-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                      />
+                    </svg>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                    />
+                  </svg>
+                </div>
+              </summary>
+              <div class="py-4 space-y-6">
+                <div class="flex flex-col py-4 gap-2">
+                  <div class="flex items-center gap-2">
+                    <div class="flex gap-1 items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        /></svg
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                    <p>4.4 Stars</p>
+                  </div>
+                  <a class="text-lg underline underline-offset-4" href="#"
+                    >Write a Review</a
+                  >
+                </div>
+                <div class="space-y-2">
+                  <h4 class="text-lg font-medium">Air Max Plus Drift</h4>
+                  <div class="flex items-center gap-4">
+                    <div class="flex gap-1 items-center">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="13"
+                        height="13"
+                        fill="currentColor"
+                        class="bi bi-star-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                        />
+                      </svg>
+                    </div>
+                    <p class="text-gray-400">NikkolL376648806 - May 02, 2024</p>
+                  </div>
+                  <p>
+                    These Nike Air Max Plus Drift Are so comfortable especially
+                    for walking
+                  </p>
+                </div>
+
+                <div class="py-2">
+                  <a
+                    class="text-lg font-medium underline underline-offset-4"
+                    href="#"
+                    >More Reviews</a
+                  >
+                </div>
+              </div>
+            </details>
+            <hr />
+          </div>
         </div>
+      </div>
     </section>
+    <!-- How People Use Nike Section -->
+    <section class="flex flex-col justify-center max-w-[1824px] w-full p-8">
+      <div class="w-full space-y-4 py-6">
+        <p class="text-2xl font-medium">How Others Are Wearing It</p>
+        <p class="text-lg">
+          Upload your photo or mention @Nike on Instagram for a chance to be
+          featured.
+        </p>
+        <button class="border font-medium rounded-full py-2 px-6">
+          Upload Your Photo
+        </button>
+      </div>
+      <div class="flex gap-3">
+        <div class="w-fit h-fit relative">
+          <img
+            class="rounded-md"
+            src="https://static.pxlecdn.com/photos/614174058/medium/4c720f36e2271e357c27.jpeg"
+            alt=""
+          />
+          <div
+            class="bg-black h-fit w-fit p-2 rounded-full absolute bottom-3 left-3"
+          >
+            <img src="../../src/icon/search-white.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="flex flex-col gap-3 items-center justify-center text-center font-medium md:text-2xl w-[464px] rounded-md h-full bg-gray-100"
+        >
+          <p>
+            Be one of the first to <br />
+            show your style
+          </p>
+          <img
+            class="bg-black p-2 rounded-full"
+            src="../../src/icon/plus.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Featuring Product Section -->
     <section class="flex flex-col items-center text-2xl gap-12 py-8 px-4">
-        <p class="text-center md:start">Explore the Nike Air Max Plus Drift Men's Shoes</p>
-        <img class="w-full h-fit max-w-[1824px] bg-cover object-cover"
-            src="https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/53736e0d-dd7a-403e-ad26-a25efead4e69/pdp.jpg"
-            alt="" />
+      <p class="text-center md:start">
+        Explore the Nike Air Max Plus Drift Men's Shoes
+      </p>
+      <img
+        class="w-full h-fit max-w-[1824px] bg-cover object-cover"
+        src="https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/53736e0d-dd7a-403e-ad26-a25efead4e69/pdp.jpg"
+        alt=""
+      />
     </section>
     <section class="flex flex-col items-center text-2xl gap-12 py-8">
-        <p>
-            Upper combines mesh and synthetic materials for breathability and
-            durability.
-        </p>
-        <img class="w-full h-fit max-w-[1824px] bg-cover object-cover"
-            src="https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/ed8dfcff-a660-4f2d-80fc-61d07e177ef1/pdp.jpg"
-            alt="" />
+      <p>
+        Upper combines mesh and synthetic materials for breathability and
+        durability.
+      </p>
+      <img
+        class="w-full h-fit max-w-[1824px] bg-cover object-cover"
+        src="https://static.nike.com/a/images/t_prod/w_1920,c_limit,f_auto,q_auto/ed8dfcff-a660-4f2d-80fc-61d07e177ef1/pdp.jpg"
+        alt=""
+      />
     </section>
     <section class="text-xl w-full text-center max-w-[1824px] px-12">
-        <p class="px-[20%]">
-            Bringing beach life to the city, the supportive arch draws inspiration
-            from a whale's tail while the wavy lines nod to palm trees and ocean
-            waves.
-        </p>
+      <p class="px-[20%]">
+        Bringing beach life to the city, the supportive arch draws inspiration
+        from a whale's tail while the wavy lines nod to palm trees and ocean
+        waves.
+      </p>
     </section>
+    <!-- Product Recommendation Section -->
     <div class="p-10 max-w-[1920px] w-full">
-        <h2 class="text-2xl pb-10">You Might Also Like</h2>
-        <div id="popularList"
-            class="popular-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"></div>
+      <h2 class="text-2xl pb-10">You Might Also Like</h2>
+      <div
+        id="popularList"
+        class="popular-list flex flex-no-wrap gap-3 overflow-x-scroll scrolling-touch items-start pb-10"
+      ></div>
     </div>
     <footer-component></footer-component>
     <script src="../../script/index.js" type="module"></script>
     <script src="./components/featured-product.js"></script>
     <script src="../../pages/home/popular.js"></script>
-</body>
-
+  </body>
 </html>
